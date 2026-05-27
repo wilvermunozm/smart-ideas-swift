@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────
+# macOS
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ─────────────────────────────────────────────────────────────
+# Xcode — user-specific state (NEVER commit)
+# ─────────────────────────────────────────────────────────────
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Per-user scheme management. Shared schemes live in
+# xcshareddata/ and SHOULD be committed (see note at bottom).
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# ─────────────────────────────────────────────────────────────
+# Build artifacts
+# ─────────────────────────────────────────────────────────────
+build/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ─────────────────────────────────────────────────────────────
+# Swift Package Manager
+# ─────────────────────────────────────────────────────────────
+.build/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/xcode/xcuserdata/
+.swiftpm/configuration/registries.json
+.netrc
+
+# NOTE: Package.resolved is intentionally NOT ignored — see bottom.
+
+# ─────────────────────────────────────────────────────────────
+# CocoaPods / Carthage (no las usás hoy, pero por si acaso)
+# ─────────────────────────────────────────────────────────────
+Pods/
+Carthage/Build/
+
+# ─────────────────────────────────────────────────────────────
+# Secrets / config (para cuando metas cloud fallback)
+# ─────────────────────────────────────────────────────────────
+*.xcconfig.local
+.env
+.env.*
+Secrets.plist
+GoogleService-Info.plist
+
+# ─────────────────────────────────────────────────────────────
+# Modelos de ML pesados (NO los metas en git — usá Git LFS o
+# descarga en build). Aplica si embebés MLX/Core ML/GGUF luego.
+# ─────────────────────────────────────────────────────────────
+*.gguf
+*.mlmodel
+*.mlpackage/
+*.safetensors
+*.bin
+
+# ─────────────────────────────────────────────────────────────
+# Misc
+# ─────────────────────────────────────────────────────────────
+*.log
+*.swp
+*~.nib
+playground.xcworkspace
+timeline.xctimeline
